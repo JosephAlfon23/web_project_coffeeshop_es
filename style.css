@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  position: relative;
+  min-height: 720px;
+  padding: 80px 80px 50px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  width: 105px;
+  height: auto;
+}
+
+/* CAMBIO: antes .header__nav { ... } */
+.nav {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #b33b3b;
+}
+
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+.header__content {
+  margin-top: 183px;
+  max-width: 560px;
+  margin-left: 60px;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.header__title-accent {
+  display: block;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 72px;
+  margin: 0 0 8px;
+  color: #aa4317;
+}
+
+.header__title-main {
+  display: block;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #1b1717;
+}
+
+.header-description {
+  margin: 40px 0 0;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 560px;
+}
+
+.header-image {
+  position: absolute;
+  top: 180px;
+  right: 70px;
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header-info {
+  position: absolute;
+  left: 80px;
+  right: 80px;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  z-index: 1;
+}
+
+.header-hour {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #bba4a4;
+}
+
+.info-text {
+  margin: 0;
+}
+
+.header-address {
+  color: #6f6f6f;
+  text-align: right;
+  max-width: 360px;
+  margin: 0;
+}
+
+.content {
+  min-height: 1px;
+}
+
+.footer {
+  min-height: 1px;
+}
