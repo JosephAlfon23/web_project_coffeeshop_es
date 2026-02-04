@@ -64,10 +64,65 @@
     </header>
 
     <main class="content">
-      <section id="reservation"></section>
+      <section id="reservation">
+        <div class="form__container">
+          <h2 class="container__title">Reservation</h2>
+          <form class="form" action="/procesar-formulario" method="POST">
+            <label class="form__label" for="name">Name</label>
+            <input
+              type="text"
+              minlength="2"
+              maxlength="20"
+              class="form__input"
+              required
+              id="name"
+              placeholder="Enter your name"
+            />
+
+            <label class="form__label" for="guests">number of diners</label>
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="form__input"
+              required
+              id="guests"
+              placeholder="number of diners"
+            />
+
+            <label class="form__label" for="dateline">Date and time</label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              required
+              id="dateline"
+              placeholder="What time and hour Do you have in mind"
+            />
+
+            <label class="form__label" for="email">Email</label>
+            <input
+              type="email"
+              class="form__input"
+              required
+              id="email"
+              placeholder="Enter your email"
+            />
+            <div class="form__button">
+              <button type="submit" class="button-submit">
+                Make reservation
+              </button>
+            </div>
+
+            <label for="terms">
+              <input type="checkbox" id="terms" required />
+              I accept the terms and conditions
+            </label>
+          </form>
+        </div>
+      </section>
+
       <section id="contacts"></section>
     </main>
-
     <footer class="footer"></footer>
   </body>
 </html>
