@@ -177,7 +177,7 @@ body {
 }
 #reservation {
   background-color: #ffd6c5;
-  background-image: url("./images/background_reservation.svg");
+  background-image: url("../images/background_reservation.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,5 +205,122 @@ body {
 }
 
 .footer {
-  min-height: 1px;
+  background-color: #d35722;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  min-height: 270px;
+}
+
+.Container_images {
+  position: relative;
+  padding: 60px 80px 20px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 270px;
+}
+
+.Container_images::before {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #e96e3a;
+  top: -128px;
+  left: -44px;
+  z-index: 0;
+}
+
+.footer__title {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  z-index: 2;
+}
+
+.form_logo {
+  width: 105px;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  z-index: 1;
+}
+
+.social-links {
+  position: absolute;
+  top: 108px;
+  right: 80px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 2;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #ffd6c5;
+}
+
+.social-links img {
+  width: 16px;
+  height: 16px;
+}
+
+.footer p {
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer p img {
+  width: 16px;
+  height: 16px;
+}
+
+.form__copyright {
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+  top: auto;
+  z-index: 2;
+}
+
+.form__copyright img {
+  width: 16px;
+  height: 16px;
 }
